@@ -84,32 +84,19 @@
 
 
 
-<meta name="description" content="前天看到知乎的FloatingActionButton似乎跟Android自带的不一样，很炫的效果。
-
-然后自己查资料发现在github上面已经有人实现了这样的效果，
-https://github.com/Clans/FloatingActionButton
-https://github.com/futuresimple/android-floating-action-button
-知乎用的是第一">
+<meta name="description" content="链家的欢迎引导页面就是一个ViewPager实现的，同时用到了动画效果。
+123456789101112131415161718192021222324252627282930313233343536public class DepthPageTransformer implements ViewPager.PageTransformer &amp;#123;    private static fina">
 <meta property="og:type" content="article">
-<meta property="og:title" content="仿知乎FloatingActionButton">
-<meta property="og:url" content="http://yoursite.com/2016/05/15/仿知乎FloatingActionButton/index.html">
+<meta property="og:title" content="仿链家欢迎引导页面">
+<meta property="og:url" content="http://yoursite.com/2016/05/23/仿链家欢迎引导页面/index.html">
 <meta property="og:site_name" content="高磊的博客">
-<meta property="og:description" content="前天看到知乎的FloatingActionButton似乎跟Android自带的不一样，很炫的效果。
-
-然后自己查资料发现在github上面已经有人实现了这样的效果，
-https://github.com/Clans/FloatingActionButton
-https://github.com/futuresimple/android-floating-action-button
-知乎用的是第一">
-<meta property="og:image" content="http://screenshot.net/47yw0h4.jpg">
-<meta property="og:updated_time" content="2016-05-15T09:07:50.188Z">
+<meta property="og:description" content="链家的欢迎引导页面就是一个ViewPager实现的，同时用到了动画效果。
+123456789101112131415161718192021222324252627282930313233343536public class DepthPageTransformer implements ViewPager.PageTransformer &amp;#123;    private static fina">
+<meta property="og:updated_time" content="2016-05-23T15:59:43.305Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="仿知乎FloatingActionButton">
-<meta name="twitter:description" content="前天看到知乎的FloatingActionButton似乎跟Android自带的不一样，很炫的效果。
-
-然后自己查资料发现在github上面已经有人实现了这样的效果，
-https://github.com/Clans/FloatingActionButton
-https://github.com/futuresimple/android-floating-action-button
-知乎用的是第一">
+<meta name="twitter:title" content="仿链家欢迎引导页面">
+<meta name="twitter:description" content="链家的欢迎引导页面就是一个ViewPager实现的，同时用到了动画效果。
+123456789101112131415161718192021222324252627282930313233343536public class DepthPageTransformer implements ViewPager.PageTransformer &amp;#123;    private static fina">
 
 
 
@@ -127,7 +114,7 @@ https://github.com/futuresimple/android-floating-action-button
   };
 </script>
 
-  <title> 仿知乎FloatingActionButton | 高磊的博客 </title>
+  <title> 仿链家欢迎引导页面 | 高磊的博客 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -267,7 +254,7 @@ https://github.com/futuresimple/android-floating-action-button
             
             
               
-                仿知乎FloatingActionButton
+                仿链家欢迎引导页面
               
             
           </h1>
@@ -279,8 +266,8 @@ https://github.com/futuresimple/android-floating-action-button
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-05-15T16:36:48+08:00" content="2016-05-15">
-              2016-05-15
+            <time itemprop="dateCreated" datetime="2016-05-23T23:53:01+08:00" content="2016-05-23">
+              2016-05-23
             </time>
           </span>
 
@@ -290,8 +277,8 @@ https://github.com/futuresimple/android-floating-action-button
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/05/15/仿知乎FloatingActionButton/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/05/15/仿知乎FloatingActionButton/" itemprop="commentsCount"></span>
+                <a href="/2016/05/23/仿链家欢迎引导页面/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/05/23/仿链家欢迎引导页面/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -314,76 +301,11 @@ https://github.com/futuresimple/android-floating-action-button
       
 
       
-        <p>前天看到知乎的FloatingActionButton似乎跟Android自带的不一样，很炫的效果。</p>
-<p><img src="http://screenshot.net/47yw0h4.jpg" alt="知乎FloatingActionButton"></p>
-<p>然后自己查资料发现在github上面已经有人实现了这样的效果，</p>
-<p><a href="https://github.com/Clans/FloatingActionButton" target="_blank" rel="external">https://github.com/Clans/FloatingActionButton</a></p>
-<p><a href="https://github.com/futuresimple/android-floating-action-button" target="_blank" rel="external">https://github.com/futuresimple/android-floating-action-button</a></p>
-<p>知乎用的是第一个。</p>
-<p>用法相当简单。</p>
-<ol>
-<li><p>在<code>build.gradle</code>中添加相关依赖：</p>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">dependencies &#123;</span><br><span class="line">    compile 'com.github.clans:fab:1.6.3'</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>在布局文件中引入<code>com.github.clans.fab.FloatingActionButton</code>控件。</p>
-<pre><code>&lt;com.github.clans.fab.FloatingActionMenu
-        android:id=&quot;@+id/fam&quot;
-        android:layout_width=&quot;match_parent&quot;
-        android:layout_height=&quot;match_parent&quot;
-        android:layout_gravity=&quot;end|bottom|center&quot;
-        android:paddingBottom=&quot;56dp&quot;
-        android:paddingRight=&quot;8dp&quot;
-        app:menu_animationDelayPerItem=&quot;0&quot;
-        app:menu_backgroundColor=&quot;@color/background_translucent_light&quot;
-        app:menu_colorNormal=&quot;@color/background_fab_light&quot;
-        app:menu_colorPressed=&quot;@color/background_fab_light&quot;
-        app:menu_colorRipple=&quot;@color/mask_opacity_20&quot;
-        app:menu_fab_size=&quot;normal&quot;
-        app:menu_icon=&quot;@drawable/ic_add_white_24dp&quot;
-        app:menu_labels_colorNormal=&quot;@color/background_fab_sub_light&quot;
-        app:menu_labels_colorPressed=&quot;@color/background_fab_sub_light&quot;
-        app:menu_labels_colorRipple=&quot;@color/mask_opacity_20&quot;
-        app:menu_labels_textColor=&quot;@color/text_primary_light&quot;
-        app:menu_shadowColor=&quot;#26000000&quot;
-        app:menu_shadowRadius=&quot;4dp&quot;
-        app:menu_shadowXOffset=&quot;0dp&quot;
-        app:menu_shadowYOffset=&quot;2dp&quot;&gt;
-
-        &lt;com.github.clans.fab.FloatingActionButton
-            android:id=&quot;@+id/fab_edit&quot;
-            android:layout_width=&quot;wrap_content&quot;
-            android:layout_height=&quot;wrap_content&quot;
-            android:src=&quot;@drawable/ic_create_write&quot;
-            app:fab_colorNormal=&quot;@color/background_fab_sub_light&quot;
-            app:fab_colorPressed=&quot;@color/background_fab_sub_light&quot;
-            app:fab_colorRipple=&quot;@color/mask_opacity_20&quot;
-            app:fab_label=&quot;@string/label_fab_answer_write&quot;
-            app:fab_shadowColor=&quot;#26000000&quot;
-            app:fab_shadowRadius=&quot;4dp&quot;
-            app:fab_shadowXOffset=&quot;0dp&quot;
-            app:fab_shadowYOffset=&quot;2dp&quot;
-            app:fab_size=&quot;mini&quot; /&gt;
-
-        &lt;com.github.clans.fab.FloatingActionButton
-            android:id=&quot;@+id/fab_invite&quot;
-            android:layout_width=&quot;wrap_content&quot;
-            android:layout_height=&quot;wrap_content&quot;
-            android:src=&quot;@drawable/ic_invite_answer&quot;
-            app:fab_colorNormal=&quot;@color/background_fab_sub_light&quot;
-            app:fab_colorPressed=&quot;@color/background_fab_sub_light&quot;
-            app:fab_colorRipple=&quot;@color/mask_opacity_20&quot;
-            app:fab_label=&quot;@string/label_fab_answer_invite&quot;
-            app:fab_shadowColor=&quot;#26000000&quot;
-            app:fab_shadowRadius=&quot;4dp&quot;
-            app:fab_shadowXOffset=&quot;0dp&quot;
-            app:fab_shadowYOffset=&quot;2dp&quot;
-            app:fab_size=&quot;mini&quot; /&gt;
-
-    &lt;/com.github.clans.fab.FloatingActionMenu&gt;
-</code></pre></li>
-</ol>
-<p>上面的代码就是知乎FloatingActionButton的效果。</p>
-<p>源代码已上传coding：<a href="https://coding.net/u/leigo/p/FloatingActionButton/git" target="_blank" rel="external">https://coding.net/u/leigo/p/FloatingActionButton/git</a></p>
+        <p>链家的欢迎引导页面就是一个ViewPager实现的，同时用到了动画效果。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">DepthPageTransformer</span> <span class="keyword">implements</span> <span class="title">ViewPager</span>.<span class="title">PageTransformer</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="keyword">float</span> MIN_SCALE = <span class="number">0.75f</span>;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">transformPage</span><span class="params">(View view, <span class="keyword">float</span> position)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> pageWidth = view.getWidth();</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> (position &lt; -<span class="number">1</span>) &#123; <span class="comment">// [-Infinity,-1)</span></span><br><span class="line">            <span class="comment">// This page is way off-screen to the left.</span></span><br><span class="line">            view.setAlpha(<span class="number">0</span>);</span><br><span class="line"></span><br><span class="line">        &#125; <span class="keyword">else</span> <span class="keyword">if</span> (position &lt;= <span class="number">0</span>) &#123; <span class="comment">// [-1,0]</span></span><br><span class="line">            <span class="comment">// Use the default slide transition when moving to the left page</span></span><br><span class="line">            view.setAlpha(<span class="number">1</span>);</span><br><span class="line">            view.setTranslationX(<span class="number">0</span>);</span><br><span class="line">            view.setScaleX(<span class="number">1</span>);</span><br><span class="line">            view.setScaleY(<span class="number">1</span>);</span><br><span class="line"></span><br><span class="line">        &#125; <span class="keyword">else</span> <span class="keyword">if</span> (position &lt;= <span class="number">1</span>) &#123; <span class="comment">// (0,1]</span></span><br><span class="line">            <span class="comment">// Fade the page out.</span></span><br><span class="line">            view.setAlpha(<span class="number">1</span> - position);</span><br><span class="line"></span><br><span class="line">            <span class="comment">// Counteract the default slide transition</span></span><br><span class="line">            view.setTranslationX(pageWidth * -position);</span><br><span class="line"></span><br><span class="line">            <span class="comment">// Scale the page down (between MIN_SCALE and 1)</span></span><br><span class="line">            <span class="keyword">float</span> scaleFactor = MIN_SCALE</span><br><span class="line">                    + (<span class="number">1</span> - MIN_SCALE) * (<span class="number">1</span> - Math.abs(position));</span><br><span class="line">            view.setScaleX(scaleFactor);</span><br><span class="line">            view.setScaleY(scaleFactor);</span><br><span class="line"></span><br><span class="line">        &#125; <span class="keyword">else</span> &#123; <span class="comment">// (1,+Infinity]</span></span><br><span class="line">            <span class="comment">// This page is way off-screen to the right.</span></span><br><span class="line">            view.setAlpha(<span class="number">0</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>reference:</p>
+<p><a href="https://developer.android.com/training/animation/screen-slide.html" target="_blank" rel="external">https://developer.android.com/training/animation/screen-slide.html</a></p>
+<p>源代码已上传coding：<a href="https://coding.net/u/leigo/p/LianJia/gitt" target="_blank" rel="external">https://coding.net/u/leigo/p/LianJia/git</a></p>
 
       
     </div>
@@ -408,17 +330,13 @@ https://github.com/futuresimple/android-floating-action-button
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/05/15/hello-world/" rel="next" title="Hello World">
-                <i class="fa fa-chevron-left"></i> Hello World
+              <a href="/2016/05/17/Material-Design之主题样式/" rel="next" title="Material Design之主题样式">
+                <i class="fa fa-chevron-left"></i> Material Design之主题样式
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/05/17/Material-Design之主题样式/" rel="prev" title="Material Design之主题样式">
-                Material Design之主题样式 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -444,8 +362,8 @@ https://github.com/futuresimple/android-floating-action-button
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/05/15/仿知乎FloatingActionButton/"
-           data-title="仿知乎FloatingActionButton" data-url="http://yoursite.com/2016/05/15/仿知乎FloatingActionButton/">
+      <div class="ds-thread" data-thread-key="2016/05/23/仿链家欢迎引导页面/"
+           data-title="仿链家欢迎引导页面" data-url="http://yoursite.com/2016/05/23/仿链家欢迎引导页面/">
       </div>
     
   </div>
