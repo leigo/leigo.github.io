@@ -253,6 +253,109 @@
             
               
                 
+                <a class="post-title-link" href="/2016/07/14/hello-world/" itemprop="url">
+                  Hello World
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-07-14T22:01:35+08:00" content="2016-07-14">
+              2016-07-14
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/07/14/hello-world/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/07/14/hello-world/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/07/14/hello-world/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/07/03/仿知乎引导界面/" itemprop="url">
                   仿知乎引导界面
                 </a>
@@ -305,7 +408,6 @@
         
           <p>效果图：</p>
 <p><img src="http://i2.piimg.com/1949/8224df3d573ee919.gif" alt="Markdown"></p>
-<p><code>ViewPager</code>的PageTransformer接口，用来自定义<code>ViewPager</code>页面切换动画，通过<code>setPageTransformer(boolean, PageTransformer)</code>方法来进行设置。</p>
           <div class="post-more-link text-center">
             <a class="btn" href="/2016/07/03/仿知乎引导界面/#more" rel="contents">
               阅读全文 &raquo;
@@ -408,13 +510,7 @@
 
       
         
-          <h2 id="u989C_u8272"><a href="#u989C_u8272" class="headerlink" title="颜色"></a>颜色</h2><p>Android中的颜色值通常遵循RGB/ARGB标准，使用时通常以“#”字符开头，以十六进制(hex) 表示。<br>常用的颜色值格式为：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">1. #RGB&#10;2. #ARGB&#10;3. #RRGGBB&#10;4. #AARRGGBB</span><br></pre></td></tr></table></figure></p>
-<p>其中，ARGB 依次代表透明度（alpha）、红色(red)、绿色(green)、蓝色(blue)。<br>以颜色值 #FF99CC00 为例，其中，FF 是透明度，99 是红色值， CC 是绿色值， 00 是蓝色值。</p>
-<h2 id="u900F_u660E_u5EA6"><a href="#u900F_u660E_u5EA6" class="headerlink" title="透明度"></a>透明度</h2><ol>
-<li>透明度分为256阶（0-255），计算机上用十六进制表示为（00-ff）。透明就是0阶，不透明就是255阶,如果50%透明就是127阶（256的一半当然是128，但因为是从0开始，所以实际上是127）。</li>
-<li><code>透明度</code> 和 <code>不透明度</code> 是两个概念， 它们加起来是1，或者100%.</li>
-<li>ARGB 中的透明度alpha，表示的是不透明度。</li>
-</ol>
+          <h2 id="u989C_u8272"><a href="#u989C_u8272" class="headerlink" title="颜色"></a>颜色</h2><p>Android中的颜色值通常遵循RGB/ARGB标准，使用时通常以“#”字符开头，以十六进制(hex) 表示。</p>
           <div class="post-more-link text-center">
             <a class="btn" href="/2016/06/29/Android颜色透明度换算/#more" rel="contents">
               阅读全文 &raquo;
@@ -620,14 +716,12 @@
 
       
         
-          
-            <p>链家的欢迎引导页面就是一个ViewPager实现的，同时用到了动画效果。</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">DepthPageTransformer</span> <span class="keyword">implements</span> <span class="title">ViewPager</span>.<span class="title">PageTransformer</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="keyword">float</span> MIN_SCALE = <span class="number">0.75f</span>;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">transformPage</span><span class="params">(View view, <span class="keyword">float</span> position)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> pageWidth = view.getWidth();</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> (position &lt; -<span class="number">1</span>) &#123; <span class="comment">// [-Infinity,-1)</span></span><br><span class="line">            <span class="comment">// This page is way off-screen to the left.</span></span><br><span class="line">            view.setAlpha(<span class="number">0</span>);</span><br><span class="line"></span><br><span class="line">        &#125; <span class="keyword">else</span> <span class="keyword">if</span> (position &lt;= <span class="number">0</span>) &#123; <span class="comment">// [-1,0]</span></span><br><span class="line">            <span class="comment">// Use the default slide transition when moving to the left page</span></span><br><span class="line">            view.setAlpha(<span class="number">1</span>);</span><br><span class="line">            view.setTranslationX(<span class="number">0</span>);</span><br><span class="line">            view.setScaleX(<span class="number">1</span>);</span><br><span class="line">            view.setScaleY(<span class="number">1</span>);</span><br><span class="line"></span><br><span class="line">        &#125; <span class="keyword">else</span> <span class="keyword">if</span> (position &lt;= <span class="number">1</span>) &#123; <span class="comment">// (0,1]</span></span><br><span class="line">            <span class="comment">// Fade the page out.</span></span><br><span class="line">            view.setAlpha(<span class="number">1</span> - position);</span><br><span class="line"></span><br><span class="line">            <span class="comment">// Counteract the default slide transition</span></span><br><span class="line">            view.setTranslationX(pageWidth * -position);</span><br><span class="line"></span><br><span class="line">            <span class="comment">// Scale the page down (between MIN_SCALE and 1)</span></span><br><span class="line">            <span class="keyword">float</span> scaleFactor = MIN_SCALE</span><br><span class="line">                    + (<span class="number">1</span> - MIN_SCALE) * (<span class="number">1</span> - Math.abs(position));</span><br><span class="line">            view.setScaleX(scaleFactor);</span><br><span class="line">            view.setScaleY(scaleFactor);</span><br><span class="line"></span><br><span class="line">        &#125; <span class="keyword">else</span> &#123; <span class="comment">// (1,+Infinity]</span></span><br><span class="line">            <span class="comment">// This page is way off-screen to the right.</span></span><br><span class="line">            view.setAlpha(<span class="number">0</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>reference:</p>
-<p><a href="https://developer.android.com/training/animation/screen-slide.html" target="_blank" rel="external">https://developer.android.com/training/animation/screen-slide.html</a></p>
-<p>源代码已上传coding：<a href="https://coding.net/u/leigo/p/LianJia/gitt" target="_blank" rel="external">https://coding.net/u/leigo/p/LianJia/git</a></p>
-
-          
+          <p>链家的欢迎引导页面就是一个ViewPager实现的，同时用到了动画效果。</p>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/05/23/仿链家欢迎引导页面/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
@@ -725,11 +819,12 @@
 
       
         
-          
-            <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">resources</span>&gt;</span></span><br><span class="line">  <span class="comment">&lt;!-- inherit from the material theme --&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="title">style</span> <span class="attribute">name</span>=<span class="value">"AppTheme"</span> <span class="attribute">parent</span>=<span class="value">"android:Theme.Material"</span>&gt;</span><span class="css"></span><br><span class="line">    &lt;!<span class="tag">--</span> <span class="tag">Main</span> <span class="tag">theme</span> <span class="tag">colors</span> <span class="tag">--</span>&gt;</span><br><span class="line">    &lt;!<span class="tag">--</span>   <span class="tag">your</span> <span class="tag">app</span> <span class="tag">branding</span> <span class="tag">color</span> <span class="tag">for</span> <span class="tag">the</span> <span class="tag">app</span> <span class="tag">bar</span> <span class="tag">--</span>&gt;</span><br><span class="line">    &lt;<span class="tag">item</span> <span class="tag">name</span>="<span class="tag">android</span><span class="pseudo">:colorPrimary"</span>&gt;<span class="at_rule">@<span class="keyword">color/primary&lt;/item&gt;</span></span><br><span class="line">    &lt;!--   darker variant for the status bar and contextual app bars --&gt;</span><br><span class="line">    &lt;item name=<span class="string">"android:colorPrimaryDark"</span>&gt;@color/primary_dark&lt;/item&gt;</span><br><span class="line">    &lt;!--   theme UI controls like checkboxes and text fields --&gt;</span><br><span class="line">    &lt;item name=<span class="string">"android:colorAccent"</span>&gt;@color/accent&lt;/item&gt;</span><br><span class="line">  </span></span><span class="tag">&lt;/<span class="title">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">resources</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p><img src="https://developer.android.com/training/material/images/ThemeColors.png" alt="Material Design主题"></p>
-
-          
+          <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">resources</span>&gt;</span></span><br><span class="line">  <span class="comment">&lt;!-- inherit from the material theme --&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="title">style</span> <span class="attribute">name</span>=<span class="value">"AppTheme"</span> <span class="attribute">parent</span>=<span class="value">"android:Theme.Material"</span>&gt;</span><span class="css"></span><br><span class="line">    &lt;!<span class="tag">--</span> <span class="tag">Main</span> <span class="tag">theme</span> <span class="tag">colors</span> <span class="tag">--</span>&gt;</span><br><span class="line">    &lt;!<span class="tag">--</span>   <span class="tag">your</span> <span class="tag">app</span> <span class="tag">branding</span> <span class="tag">color</span> <span class="tag">for</span> <span class="tag">the</span> <span class="tag">app</span> <span class="tag">bar</span> <span class="tag">--</span>&gt;</span><br><span class="line">    &lt;<span class="tag">item</span> <span class="tag">name</span>="<span class="tag">android</span><span class="pseudo">:colorPrimary"</span>&gt;<span class="at_rule">@<span class="keyword">color/primary&lt;/item&gt;</span></span><br><span class="line">    &lt;!--   darker variant for the status bar and contextual app bars --&gt;</span><br><span class="line">    &lt;item name=<span class="string">"android:colorPrimaryDark"</span>&gt;@color/primary_dark&lt;/item&gt;</span><br><span class="line">    &lt;!--   theme UI controls like checkboxes and text fields --&gt;</span><br><span class="line">    &lt;item name=<span class="string">"android:colorAccent"</span>&gt;@color/accent&lt;/item&gt;</span><br><span class="line">  </span></span><span class="tag">&lt;/<span class="title">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">resources</span>&gt;</span></span><br></pre></td></tr></table></figure>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/05/17/Material-Design之主题样式/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
@@ -828,125 +923,11 @@
       
         
           <p>前天看到知乎的FloatingActionButton似乎跟Android自带的不一样，很炫的效果。</p>
-<p><img src="http://screenshot.net/47yw0h4.jpg" alt="知乎FloatingActionButton"></p>
-<p>然后自己查资料发现在github上面已经有人实现了这样的效果，</p>
-<p><a href="https://github.com/Clans/FloatingActionButton">https://github.com/Clans/FloatingActionButton</a></p>
-<p><a href="https://github.com/futuresimple/android-floating-action-button">https://github.com/futuresimple/android-floating-action-button</a></p>
-<p>知乎用的是第一个。</p>
           <div class="post-more-link text-center">
             <a class="btn" href="/2016/05/15/仿知乎FloatingActionButton/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/05/15/hello-world/" itemprop="url">
-                  Hello World
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-05-15T16:29:23+08:00" content="2016-05-15">
-              2016-05-15
-            </time>
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/05/15/hello-world/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/05/15/hello-world/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick_Start"><a href="#Quick_Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create_a_new_post"><a href="#Create_a_new_post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run_server"><a href="#Run_server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate_static_files"><a href="#Generate_static_files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy_to_remote_sites"><a href="#Deploy_to_remote_sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-          
         
       
     </div>
