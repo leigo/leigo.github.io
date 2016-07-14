@@ -92,7 +92,7 @@
 <meta property="og:site_name" content="高磊的博客">
 <meta property="og:description" content="颜色Android中的颜色值通常遵循RGB/ARGB标准，使用时通常以“#”字符开头，以十六进制(hex) 表示。常用的颜色值格式为：11. #RGB&amp;#10;2. #ARGB&amp;#10;3. #RRGGBB&amp;#10;4. #AARRGGBB
 其中，ARGB 依次代表透明度（alpha）、红色(red)、绿色(green)、蓝色(blue)。以颜色值 #FF99CC00 为例，其中，FF 是透明度，">
-<meta property="og:updated_time" content="2016-06-29T15:10:35.773Z">
+<meta property="og:updated_time" content="2016-07-14T13:56:12.447Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Android颜色透明度换算">
 <meta name="twitter:description" content="颜色Android中的颜色值通常遵循RGB/ARGB标准，使用时通常以“#”字符开头，以十六进制(hex) 表示。常用的颜色值格式为：11. #RGB&amp;#10;2. #ARGB&amp;#10;3. #RRGGBB&amp;#10;4. #AARRGGBB
@@ -313,6 +313,7 @@
 <li><code>透明度</code> 和 <code>不透明度</code> 是两个概念， 它们加起来是1，或者100%.</li>
 <li>ARGB 中的透明度alpha，表示的是不透明度。</li>
 </ol>
+<a id="more"></a>
 <h2 id="u6362_u7B97"><a href="#u6362_u7B97" class="headerlink" title="换算"></a>换算</h2><p>在开发过程中，UI/UE给的标注图上，所有颜色值是RGB，但是透明度经常都是百分比，例如:颜色值:#FFFFFF,透明度40%。<br>使用过程中我们需要进行换算。以之前的值为例，换算过程如下:</p>
 <ol>
 <li>将透明度转换成不透明度(转换方式参考“透明度”，第2条) 。 不透明度为60%</li>
