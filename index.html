@@ -253,6 +253,138 @@
             
               
                 
+                <a class="post-title-link" href="/2016/08/19/apk瘦身/" itemprop="url">
+                  未命名
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-08-19T00:50:58+08:00" content="2016-08-19">
+              2016-08-19
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/08/19/apk瘦身/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/08/19/apk瘦身/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="apk_u7626_u8EAB"><a href="#apk_u7626_u8EAB" class="headerlink" title="apk瘦身"></a>apk瘦身</h2><p>想办法减少apk大小</p>
+<h2 id="u5FC5_u8981_u6027"><a href="#u5FC5_u8981_u6027" class="headerlink" title="必要性"></a>必要性</h2><p>同样的功能，apk越小越好，用户下载动机更大</p>
+<h2 id="u4E86_u89E3apk_u7684_u7EC4_u6210"><a href="#u4E86_u89E3apk_u7684_u7EC4_u6210" class="headerlink" title="了解apk的组成"></a>了解apk的组成</h2><ul>
+<li>classes.dex:是java源码编译后生成的java字节码文件</li>
+<li>resources.arsc:编译后的布局文件</li>
+<li>AndroidManifest.xml:清单文件</li>
+<li>assets:目录可以存放一些配置文件</li>
+<li>lib：目录下的子目录armeabi存放的是一些so文件或者jar文件</li>
+<li>META-INF:目录下存放的是签名信息，用来保证apk包的完整性和系统的安全</li>
+<li>res:apk图片资源</li>
+</ul>
+<h2 id="u4E86_u89E3apk_u751F_u6210_u8FC7_u7A0B"><a href="#u4E86_u89E3apk_u751F_u6210_u8FC7_u7A0B" class="headerlink" title="了解apk生成过程"></a>了解apk生成过程</h2><p><img src="https://developer.android.com/images/tools/studio/build-process_2x.png" alt="https://developer.android.com/images/tools/studio/build-process_2x.png"></p>
+<h2 id="u8F85_u52A9_u5206_u6790_u5DE5_u5177"><a href="#u8F85_u52A9_u5206_u6790_u5DE5_u5177" class="headerlink" title="辅助分析工具"></a>辅助分析工具</h2><p><code>nimbledroid</code>:能够得知app内存使用，网络使用，磁盘输入/输出，文件大小等一些<code>nimbledroid</code>认为至关重要的数据</p>
+<ul>
+<li>官网：<a href="https://nimbledroid.com/" target="_blank" rel="external">https://nimbledroid.com/</a></li>
+<li>注册</li>
+<li>登录</li>
+<li>上传apk</li>
+</ul>
+<h2 id="u7626_u8EAB_u6B65_u9AA4"><a href="#u7626_u8EAB_u6B65_u9AA4" class="headerlink" title="瘦身步骤"></a>瘦身步骤</h2><ol>
+<li><p>开启<code>minifyEnabled</code>(开启混淆，删除没用的java文件)</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">buildTypes &#123;&#10;        release &#123;&#10;            minifyEnabled true&#10;            proguardFiles getDefaultProguardFile(&#39;proguard-android.txt&#39;), &#39;proguard-rules.pro&#39;&#10;        &#125;&#10;&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>开启<code>shrinkResources</code>(去除无用资源)，同时去除工程中临时展示的图片</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">buildTypes &#123;&#10;        release &#123;&#10;            minifyEnabled true&#10;            shrinkResources true&#10;            proguardFiles getDefaultProguardFile(&#39;proguard-android.txt&#39;), &#39;proguard-rules.pro&#39;&#10;        &#125;&#10;&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>删除无用的语言资源</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">defaultConfig &#123;&#10;        resConfigs &#39;zh&#39;&#10;&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>使用<code>tinypng</code>有损压缩</p>
+</li>
+</ol>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/08/18/Android-N新特性/" itemprop="url">
                   Android N新特性
                 </a>
@@ -1217,7 +1349,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">9</span>
+              <span class="site-state-item-count">10</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
